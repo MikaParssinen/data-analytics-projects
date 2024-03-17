@@ -359,7 +359,7 @@
     </edit-group-action>
   </actions>
   <worksheets>
-    <worksheet name='HeatMap'>
+    <worksheet name='Heatmap'>
       <table>
         <view>
           <datasources>
@@ -511,7 +511,27 @@
       </table>
       <simple-id uuid='{F8B5EC3A-4E4B-4A9E-9DD5-ECEC73360CBA}' />
     </worksheet>
-    <worksheet name='Sheet 2'>
+    <worksheet name='Sheet 4'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{015D9E69-1B49-4075-BF57-5BAA4E4AB9DA}' />
+    </worksheet>
+    <worksheet name='TotalRides'>
       <layout-options>
         <title>
           <formatted-text>
@@ -622,7 +642,7 @@
       </cards>
       <simple-id uuid='{8159DAF9-2C1A-4D76-8B04-DFC292BE1A78}' />
     </window>
-    <window class='worksheet' name='Sheet 2'>
+    <window class='worksheet' name='TotalRides'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -645,7 +665,7 @@
       </cards>
       <simple-id uuid='{2A7D3404-A168-48A6-B7A0-43408883647F}' />
     </window>
-    <window class='worksheet' maximized='true' name='HeatMap'>
+    <window class='worksheet' name='Heatmap'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -675,6 +695,29 @@
         <zoom type='entire-view' />
       </viewpoint>
       <simple-id uuid='{F818530F-C872-4330-BA23-60C45D0620F2}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='31'>
+            <card type='columns' />
+          </strip>
+          <strip size='31'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{6111DF67-1B2A-4D73-AFF9-6A0D796EB941}' />
     </window>
   </windows>
 </workbook>
