@@ -311,58 +311,7 @@
       <column-instance column='[time]' derivation='Hour' name='[hr:time:ok]' pivot='key' type='ordinal' />
       <column-instance column='[weather]' derivation='None' name='[none:weather:nk]' pivot='key' type='nominal' />
       <group caption='Moving Average Period Set' name='[Moving Average Period Set]' name-style='unqualified' user:ui-builder='filter-group'>
-        <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
-          <groupfilter function='member' level='[Calculation_1800876967064084480]' member='#2015-12-18#' />
-          <groupfilter function='member' level='[Calculation_1800876967064084480]' member='#2015-12-19#' />
-          <groupfilter function='member' level='[Calculation_1800876967064084480]' member='#2015-12-20#' />
-          <groupfilter function='member' level='[Calculation_1800876967064084480]' member='#2015-12-21#' />
-          <groupfilter function='member' level='[Calculation_1800876967064084480]' member='#2015-12-22#' />
-          <groupfilter function='member' level='[Calculation_1800876967064084480]' member='#2015-12-23#' />
-          <groupfilter function='member' level='[Calculation_1800876967064084480]' member='#2015-12-24#' />
-          <groupfilter function='member' level='[Calculation_1800876967064084480]' member='#2015-12-25#' />
-          <groupfilter function='member' level='[Calculation_1800876967064084480]' member='#2015-12-26#' />
-          <groupfilter function='member' level='[Calculation_1800876967064084480]' member='#2015-12-27#' />
-          <groupfilter function='member' level='[Calculation_1800876967064084480]' member='#2015-12-28#' />
-          <groupfilter function='member' level='[Calculation_1800876967064084480]' member='#2015-12-29#' />
-          <groupfilter function='member' level='[Calculation_1800876967064084480]' member='#2015-12-30#' />
-          <groupfilter function='member' level='[Calculation_1800876967064084480]' member='#2015-12-31#' />
-          <groupfilter function='member' level='[Calculation_1800876967064084480]' member='#2016-01-01#' />
-          <groupfilter function='member' level='[Calculation_1800876967064084480]' member='#2016-01-02#' />
-          <groupfilter function='member' level='[Calculation_1800876967064084480]' member='#2016-01-03#' />
-          <groupfilter function='member' level='[Calculation_1800876967064084480]' member='#2016-01-04#' />
-          <groupfilter function='member' level='[Calculation_1800876967064084480]' member='#2016-01-05#' />
-          <groupfilter function='member' level='[Calculation_1800876967064084480]' member='#2016-01-06#' />
-          <groupfilter function='member' level='[Calculation_1800876967064084480]' member='#2016-01-07#' />
-          <groupfilter function='member' level='[Calculation_1800876967064084480]' member='#2016-01-08#' />
-          <groupfilter function='member' level='[Calculation_1800876967064084480]' member='#2016-01-09#' />
-          <groupfilter function='member' level='[Calculation_1800876967064084480]' member='#2016-01-10#' />
-          <groupfilter function='member' level='[Calculation_1800876967064084480]' member='#2016-01-11#' />
-          <groupfilter function='member' level='[Calculation_1800876967064084480]' member='#2016-01-12#' />
-          <groupfilter function='member' level='[Calculation_1800876967064084480]' member='#2016-01-13#' />
-          <groupfilter function='member' level='[Calculation_1800876967064084480]' member='#2016-01-14#' />
-          <groupfilter function='member' level='[Calculation_1800876967064084480]' member='#2016-01-15#' />
-          <groupfilter function='member' level='[Calculation_1800876967064084480]' member='#2016-01-16#' />
-          <groupfilter function='member' level='[Calculation_1800876967064084480]' member='#2016-01-17#' />
-          <groupfilter function='member' level='[Calculation_1800876967064084480]' member='#2016-01-18#' />
-          <groupfilter function='member' level='[Calculation_1800876967064084480]' member='#2016-01-19#' />
-          <groupfilter function='member' level='[Calculation_1800876967064084480]' member='#2016-01-20#' />
-          <groupfilter function='member' level='[Calculation_1800876967064084480]' member='#2016-01-21#' />
-          <groupfilter function='member' level='[Calculation_1800876967064084480]' member='#2016-01-22#' />
-          <groupfilter function='member' level='[Calculation_1800876967064084480]' member='#2016-01-23#' />
-          <groupfilter function='member' level='[Calculation_1800876967064084480]' member='#2016-01-24#' />
-          <groupfilter function='member' level='[Calculation_1800876967064084480]' member='#2016-01-25#' />
-          <groupfilter function='member' level='[Calculation_1800876967064084480]' member='#2016-01-26#' />
-          <groupfilter function='member' level='[Calculation_1800876967064084480]' member='#2016-01-27#' />
-          <groupfilter function='member' level='[Calculation_1800876967064084480]' member='#2016-01-28#' />
-          <groupfilter function='member' level='[Calculation_1800876967064084480]' member='#2016-01-29#' />
-          <groupfilter function='member' level='[Calculation_1800876967064084480]' member='#2016-01-30#' />
-          <groupfilter function='member' level='[Calculation_1800876967064084480]' member='#2016-01-31#' />
-          <groupfilter function='member' level='[Calculation_1800876967064084480]' member='#2016-02-01#' />
-          <groupfilter function='member' level='[Calculation_1800876967064084480]' member='#2016-02-02#' />
-          <groupfilter function='member' level='[Calculation_1800876967064084480]' member='#2016-02-03#' />
-          <groupfilter function='member' level='[Calculation_1800876967064084480]' member='#2016-02-04#' />
-          <groupfilter function='member' level='[Calculation_1800876967064084480]' member='#2016-02-05#' />
-        </groupfilter>
+        <groupfilter from='#2015-03-01#' function='range' level='[Calculation_1800876967064084480]' to='#2015-06-21#' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
       </group>
       <group caption='Tooltip (Min Month,Max Month,Wind Kph,Temp C)' hidden='true' name='[Tooltip (Min Month,Max Month,Wind Kph,Temp C)]' name-style='unqualified' user:auto-column='sheet_link' user:ui-vit-column='true'>
         <groupfilter function='crossjoin'>
@@ -768,10 +717,12 @@
             </groupfilter>
           </filter>
           <filter class='categorical' column='[federated.0d4mim60ht1li414x8poq07wunbv].[Tooltip (Moving Average Period,Min Month,Max Month)]'>
-            <groupfilter function='crossjoin' user:ui-action-filter='[Action - Hour]' user:ui-enumeration='all' user:ui-marker='enumerate'>
-              <groupfilter function='level-members' level='[Calculation_1800876967064084480]' />
-              <groupfilter function='level-members' level='[Calculation_1800876967065255937]' />
-              <groupfilter function='level-members' level='[Min Month (copy)_1800876967065784322]' />
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action - Hour]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[Calculation_1800876967064084480]' member='#2015-07-08#' />
+              <groupfilter function='crossjoin'>
+                <groupfilter function='member' level='[Calculation_1800876967065255937]' member='#2015-03-01#' />
+                <groupfilter function='member' level='[Min Month (copy)_1800876967065784322]' member='#2015-06-21#' />
+              </groupfilter>
             </groupfilter>
           </filter>
           <filter class='categorical' column='[federated.0d4mim60ht1li414x8poq07wunbv].[none:Calculation_1800876967069999107:nk]'>
@@ -1201,10 +1152,12 @@
             </groupfilter>
           </filter>
           <filter class='categorical' column='[federated.0d4mim60ht1li414x8poq07wunbv].[Tooltip (Moving Average Period,Min Month,Max Month)]'>
-            <groupfilter function='crossjoin' user:ui-action-filter='[Action - Weather]' user:ui-enumeration='all' user:ui-marker='enumerate'>
-              <groupfilter function='level-members' level='[Calculation_1800876967064084480]' />
-              <groupfilter function='level-members' level='[Calculation_1800876967065255937]' />
-              <groupfilter function='level-members' level='[Min Month (copy)_1800876967065784322]' />
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action - Weather]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[Calculation_1800876967064084480]' member='#2015-07-08#' />
+              <groupfilter function='crossjoin'>
+                <groupfilter function='member' level='[Calculation_1800876967065255937]' member='#2015-03-01#' />
+                <groupfilter function='member' level='[Min Month (copy)_1800876967065784322]' member='#2015-06-21#' />
+              </groupfilter>
             </groupfilter>
           </filter>
           <filter class='categorical' column='[federated.0d4mim60ht1li414x8poq07wunbv].[none:Calculation_1800876967069999107:nk]'>
