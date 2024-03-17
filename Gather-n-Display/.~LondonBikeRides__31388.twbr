@@ -3,17 +3,24 @@
 <!-- build 20231.24.0202.0949                               -->
 <workbook original-version='18.1' source-build='2023.1.10 (20231.24.0202.0949)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
   <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
     <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
     <CustomReferenceLineTooltips />
     <GroupAction />
     <_.fcp.GroupActionAddRemove.true...GroupActionAddRemove />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
     <_.fcp.MarkAnimation.true...MarkAnimation />
     <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
     <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
     <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
     <SetMembershipControl />
     <SheetIdentifierTracking />
+    <VizInTooltipHideWorksheet />
     <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+    <ZoneBackgroundTransparency />
   </document-format-change-manifest>
   <preferences>
     <preference name='ui.encoding.shelf.height' value='24' />
@@ -300,16 +307,191 @@
       <column caption='Time' datatype='datetime' name='[time]' role='dimension' type='ordinal' />
       <column caption='Weather' datatype='string' name='[weather]' role='dimension' type='nominal' />
       <column caption='Wind Speed Kph' datatype='real' name='[wind_speed_kph]' role='measure' type='quantitative' />
+      <column-instance column='[Calculation_1800876967069999107]' derivation='Attribute' name='[attr:Calculation_1800876967069999107:nk]' pivot='key' type='nominal' />
+      <column-instance column='[time]' derivation='Hour' name='[hr:time:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[weather]' derivation='None' name='[none:weather:nk]' pivot='key' type='nominal' />
       <group caption='Moving Average Period Set' name='[Moving Average Period Set]' name-style='unqualified' user:ui-builder='filter-group'>
-        <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
-          <groupfilter from='#2015-11-21#' function='range' level='[Calculation_1800876967064084480]' to='#2016-05-08#' />
-          <groupfilter function='member' level='[Calculation_1800876967064084480]' member='#2016-05-10#' />
-          <groupfilter function='member' level='[Calculation_1800876967064084480]' member='#2016-05-11#' />
-          <groupfilter from='#2016-05-17#' function='range' level='[Calculation_1800876967064084480]' to='#2016-06-09#' />
-          <groupfilter from='#2016-06-12#' function='range' level='[Calculation_1800876967064084480]' to='#2016-07-05#' />
+        <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+          <groupfilter function='member' level='[Calculation_1800876967064084480]' member='#2015-12-18#' />
+          <groupfilter function='member' level='[Calculation_1800876967064084480]' member='#2015-12-19#' />
+          <groupfilter function='member' level='[Calculation_1800876967064084480]' member='#2015-12-20#' />
+          <groupfilter function='member' level='[Calculation_1800876967064084480]' member='#2015-12-21#' />
+          <groupfilter function='member' level='[Calculation_1800876967064084480]' member='#2015-12-22#' />
+          <groupfilter function='member' level='[Calculation_1800876967064084480]' member='#2015-12-23#' />
+          <groupfilter function='member' level='[Calculation_1800876967064084480]' member='#2015-12-24#' />
+          <groupfilter function='member' level='[Calculation_1800876967064084480]' member='#2015-12-25#' />
+          <groupfilter function='member' level='[Calculation_1800876967064084480]' member='#2015-12-26#' />
+          <groupfilter function='member' level='[Calculation_1800876967064084480]' member='#2015-12-27#' />
+          <groupfilter function='member' level='[Calculation_1800876967064084480]' member='#2015-12-28#' />
+          <groupfilter function='member' level='[Calculation_1800876967064084480]' member='#2015-12-29#' />
+          <groupfilter function='member' level='[Calculation_1800876967064084480]' member='#2015-12-30#' />
+          <groupfilter function='member' level='[Calculation_1800876967064084480]' member='#2015-12-31#' />
+          <groupfilter function='member' level='[Calculation_1800876967064084480]' member='#2016-01-01#' />
+          <groupfilter function='member' level='[Calculation_1800876967064084480]' member='#2016-01-02#' />
+          <groupfilter function='member' level='[Calculation_1800876967064084480]' member='#2016-01-03#' />
+          <groupfilter function='member' level='[Calculation_1800876967064084480]' member='#2016-01-04#' />
+          <groupfilter function='member' level='[Calculation_1800876967064084480]' member='#2016-01-05#' />
+          <groupfilter function='member' level='[Calculation_1800876967064084480]' member='#2016-01-06#' />
+          <groupfilter function='member' level='[Calculation_1800876967064084480]' member='#2016-01-07#' />
+          <groupfilter function='member' level='[Calculation_1800876967064084480]' member='#2016-01-08#' />
+          <groupfilter function='member' level='[Calculation_1800876967064084480]' member='#2016-01-09#' />
+          <groupfilter function='member' level='[Calculation_1800876967064084480]' member='#2016-01-10#' />
+          <groupfilter function='member' level='[Calculation_1800876967064084480]' member='#2016-01-11#' />
+          <groupfilter function='member' level='[Calculation_1800876967064084480]' member='#2016-01-12#' />
+          <groupfilter function='member' level='[Calculation_1800876967064084480]' member='#2016-01-13#' />
+          <groupfilter function='member' level='[Calculation_1800876967064084480]' member='#2016-01-14#' />
+          <groupfilter function='member' level='[Calculation_1800876967064084480]' member='#2016-01-15#' />
+          <groupfilter function='member' level='[Calculation_1800876967064084480]' member='#2016-01-16#' />
+          <groupfilter function='member' level='[Calculation_1800876967064084480]' member='#2016-01-17#' />
+          <groupfilter function='member' level='[Calculation_1800876967064084480]' member='#2016-01-18#' />
+          <groupfilter function='member' level='[Calculation_1800876967064084480]' member='#2016-01-19#' />
+          <groupfilter function='member' level='[Calculation_1800876967064084480]' member='#2016-01-20#' />
+          <groupfilter function='member' level='[Calculation_1800876967064084480]' member='#2016-01-21#' />
+          <groupfilter function='member' level='[Calculation_1800876967064084480]' member='#2016-01-22#' />
+          <groupfilter function='member' level='[Calculation_1800876967064084480]' member='#2016-01-23#' />
+          <groupfilter function='member' level='[Calculation_1800876967064084480]' member='#2016-01-24#' />
+          <groupfilter function='member' level='[Calculation_1800876967064084480]' member='#2016-01-25#' />
+          <groupfilter function='member' level='[Calculation_1800876967064084480]' member='#2016-01-26#' />
+          <groupfilter function='member' level='[Calculation_1800876967064084480]' member='#2016-01-27#' />
+          <groupfilter function='member' level='[Calculation_1800876967064084480]' member='#2016-01-28#' />
+          <groupfilter function='member' level='[Calculation_1800876967064084480]' member='#2016-01-29#' />
+          <groupfilter function='member' level='[Calculation_1800876967064084480]' member='#2016-01-30#' />
+          <groupfilter function='member' level='[Calculation_1800876967064084480]' member='#2016-01-31#' />
+          <groupfilter function='member' level='[Calculation_1800876967064084480]' member='#2016-02-01#' />
+          <groupfilter function='member' level='[Calculation_1800876967064084480]' member='#2016-02-02#' />
+          <groupfilter function='member' level='[Calculation_1800876967064084480]' member='#2016-02-03#' />
+          <groupfilter function='member' level='[Calculation_1800876967064084480]' member='#2016-02-04#' />
+          <groupfilter function='member' level='[Calculation_1800876967064084480]' member='#2016-02-05#' />
         </groupfilter>
       </group>
-      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' _.fcp.SchemaViewerObjectModel.true...common-percentage='0.918605' _.fcp.SchemaViewerObjectModel.true...user-set-layout-v2='true' dim-ordering='alphabetic' measure-ordering='alphabetic' parameter-percentage='0.0813954' show-structure='true' />
+      <group caption='Tooltip (Min Month,Max Month,Wind Kph,Temp C)' hidden='true' name='[Tooltip (Min Month,Max Month,Wind Kph,Temp C)]' name-style='unqualified' user:auto-column='sheet_link' user:ui-vit-column='true'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Calculation_1800876967065255937]' />
+          <groupfilter function='level-members' level='[Min Month (copy)_1800876967065784322]' />
+          <groupfilter function='level-members' level='[Wind Speed Kph (bin)]' />
+          <groupfilter function='level-members' level='[temp real C (bin)]' />
+        </groupfilter>
+      </group>
+      <group caption='Tooltip (Moving Average Period,Min Month,Max Month)' hidden='true' name='[Tooltip (Moving Average Period,Min Month,Max Month)]' name-style='unqualified' user:auto-column='sheet_link' user:ui-vit-column='true'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Calculation_1800876967064084480]' />
+          <groupfilter function='level-members' level='[Calculation_1800876967065255937]' />
+          <groupfilter function='level-members' level='[Min Month (copy)_1800876967065784322]' />
+        </groupfilter>
+      </group>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' _.fcp.SchemaViewerObjectModel.true...common-percentage='0.834848' _.fcp.SchemaViewerObjectModel.true...user-set-layout-v2='true' dim-ordering='alphabetic' measure-ordering='alphabetic' parameter-percentage='0.165152' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:weather:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Broken clouds&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Rain with thunderstorm&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Rain&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Snowfall&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Cloudy&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;Scattered clouds&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Clear&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[hr:time:ok]' type='palette'>
+            <map to='#499894'>
+              <bucket>8</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>0</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>20</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>4</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>12</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>9</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>5</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>18</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>1</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>21</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>16</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>6</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>13</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>14</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>17</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>19</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>10</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>7</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>2</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>22</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>15</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>11</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>3</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>23</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[attr:Calculation_1800876967069999107:nk]' palette='tableau10_10_0' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>false</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>true</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>%null%</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
       <semantic-values>
         <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
       </semantic-values>
@@ -350,7 +532,7 @@
   <actions>
     <edit-group-action caption='Update Moving Average Period Set' name='[Action1_3B1A92F0BEB446CABFF64A313817ED72]'>
       <activation type='on-select' />
-      <source type='sheet' worksheet='MovingAvg' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='MovingAvg' />
       <_.fcp.GroupActionAddRemove.true...add-or-remove-marks value='assign' />
       <params>
         <param name='selection-clear-set-option' value='do-nothing' />
@@ -360,6 +542,14 @@
   </actions>
   <worksheets>
     <worksheet name='Heatmap'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>Temprature vs wind speed between</run>
+            <run fontsize='11'><![CDATA[ <[federated.0d4mim60ht1li414x8poq07wunbv].[none:Calculation_1800876967065255937:qk]> and <[federated.0d4mim60ht1li414x8poq07wunbv].[none:Min Month (copy)_1800876967065784322:qk]>]]></run>
+          </formatted-text>
+        </title>
+      </layout-options>
       <table>
         <view>
           <datasources>
@@ -409,7 +599,70 @@
           </slices>
           <aggregation value='true' />
         </view>
-        <style />
+        <style>
+          <style-rule element='axis'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+            <format attr='tick-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='band-color' scope='rows' value='#00000000' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.0d4mim60ht1li414x8poq07wunbv].[none:temp real C (bin):ok]' value='n#,##0.0;-#,##0.0' />
+            <format attr='text-format' field='[federated.0d4mim60ht1li414x8poq07wunbv].[none:Wind Speed Kph (bin):ok]' value='n#,##0.0;-#,##0.0' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0d4mim60ht1li414x8poq07wunbv].[sum:count:qk]' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-sequential'>
+                <color>#f1f1f1</color>
+                <color>#e6dbe7</color>
+                <color>#dcc7de</color>
+                <color>#d2b4d5</color>
+                <color>#c7a1cb</color>
+                <color>#bd90c2</color>
+                <color>#b380b9</color>
+                <color>#aa70af</color>
+                <color>#a062a6</color>
+                <color>#96549d</color>
+                <color>#8d4894</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='cols' value='#00000000' />
+            <format attr='band-color' scope='rows' value='#00000000' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#f5f5f5' />
+            <format attr='band-size' scope='cols' value='1' />
+            <format attr='band-size' scope='rows' value='1' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#000000' />
+            <format attr='font-size' value='10' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refband'>
+            <format attr='line-visibility' id='refline4' value='on' />
+            <format attr='line-pattern-only' id='refline4' value='dotted' />
+            <format attr='fill-color' id='refline4' value='#f0f1e8' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+        </style>
         <panes>
           <pane selection-relaxation-option='selection-relaxation-allow'>
             <view>
@@ -422,10 +675,36 @@
               <lod column='[federated.0d4mim60ht1li414x8poq07wunbv].[none:Calculation_1800876967065255937:qk]' />
               <lod column='[federated.0d4mim60ht1li414x8poq07wunbv].[none:Min Month (copy)_1800876967065784322:qk]' />
             </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run bold='true' fontcolor='#72b966'><![CDATA[Temp C:		<[federated.0d4mim60ht1li414x8poq07wunbv].[none:temp real C (bin):ok]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontcolor='#72b966'><![CDATA[Wind Kph:		<[federated.0d4mim60ht1li414x8poq07wunbv].[none:Wind Speed Kph (bin):ok]>]]></run>
+                <run>Æ&#10;&#10;</run>
+                <run bold='true' fontcolor='#72b966'><![CDATA[<Sheet name="Weather" maxwidth="300" maxheight="200" filter="<All Fields>">]]></run>
+                <run>Æ&#10;&#10;</run>
+                <run bold='true' fontcolor='#72b966'><![CDATA[<Sheet name="Hour" maxwidth="300" maxheight="400" filter="<All Fields>">]]></run>
+                <run>Æ&#10;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <customized-label>
+              <formatted-text>
+                <run>&lt;</run>
+                <run>[federated.0d4mim60ht1li414x8poq07wunbv].[sum:count:qk]</run>
+                <run>&gt;</run>
+              </formatted-text>
+            </customized-label>
             <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
               <style-rule element='mark'>
                 <format attr='mark-labels-show' value='true' />
                 <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
               </style-rule>
             </style>
           </pane>
@@ -439,7 +718,167 @@
       </table>
       <simple-id uuid='{2FCA9E43-12D3-4148-BB81-2C4ED1A1FE4A}' />
     </worksheet>
+    <worksheet name='Hour'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Data (london_bikes_final)' name='federated.0d4mim60ht1li414x8poq07wunbv' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Moving Average Period' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;day&quot;'>
+              <calculation class='tableau' formula='&quot;day&quot;' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.0d4mim60ht1li414x8poq07wunbv'>
+            <column caption='Moving Average Period' datatype='date' datatype-customized='true' name='[Calculation_1800876967064084480]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='DATE(DATETRUNC([Parameters].[Parameter 1], [time]))' />
+            </column>
+            <column caption='Min Month' datatype='date' name='[Calculation_1800876967065255937]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='{ MIN(IF [Moving Average Period Set] THEN [Calculation_1800876967064084480] END)}' />
+            </column>
+            <column caption='In Range' datatype='boolean' name='[Calculation_1800876967069999107]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='[Calculation_1800876967064084480]&gt;= [Calculation_1800876967065255937]&#10;AND&#10;[Calculation_1800876967064084480]&lt;= [Min Month (copy)_1800876967065784322]' />
+            </column>
+            <column caption='Max Month' datatype='date' name='[Min Month (copy)_1800876967065784322]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='{ MAX(IF [Moving Average Period Set] THEN [Calculation_1800876967064084480] END)}' />
+            </column>
+            <column caption='Wind Kph' datatype='integer' name='[Wind Speed Kph (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='-2' formula='[wind_speed_kph]' peg='0' size='3.43' />
+            </column>
+            <column caption='Count' datatype='integer' name='[count]' role='measure' type='quantitative' />
+            <column-instance column='[time]' derivation='Hour' name='[hr:time:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_1800876967065255937]' derivation='None' name='[none:Calculation_1800876967065255937:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1800876967069999107]' derivation='None' name='[none:Calculation_1800876967069999107:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Min Month (copy)_1800876967065784322]' derivation='None' name='[none:Min Month (copy)_1800876967065784322:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[count]' derivation='Sum' name='[sum:count:qk]' pivot='key' type='quantitative' />
+            <column caption='Temp C' datatype='integer' name='[temp real C (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='-2' formula='[temp_real_C]' peg='0' size='2.44' />
+            </column>
+            <column caption='temp real C' datatype='real' name='[temp_real_C]' role='measure' type='quantitative' />
+            <column caption='Time' datatype='datetime' name='[time]' role='dimension' type='ordinal' />
+            <column caption='Wind Speed Kph' datatype='real' name='[wind_speed_kph]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0d4mim60ht1li414x8poq07wunbv].[Tooltip (Min Month,Max Month,Wind Kph,Temp C)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action - Hour]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Calculation_1800876967065255937]' />
+              <groupfilter function='level-members' level='[Min Month (copy)_1800876967065784322]' />
+              <groupfilter function='level-members' level='[Wind Speed Kph (bin)]' />
+              <groupfilter function='level-members' level='[temp real C (bin)]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0d4mim60ht1li414x8poq07wunbv].[Tooltip (Moving Average Period,Min Month,Max Month)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action - Hour]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Calculation_1800876967064084480]' />
+              <groupfilter function='level-members' level='[Calculation_1800876967065255937]' />
+              <groupfilter function='level-members' level='[Min Month (copy)_1800876967065784322]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0d4mim60ht1li414x8poq07wunbv].[none:Calculation_1800876967069999107:nk]'>
+            <groupfilter function='member' level='[none:Calculation_1800876967069999107:nk]' member='true' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0d4mim60ht1li414x8poq07wunbv].[none:Calculation_1800876967069999107:nk]</column>
+            <column>[federated.0d4mim60ht1li414x8poq07wunbv].[Tooltip (Moving Average Period,Min Month,Max Month)]</column>
+            <column>[federated.0d4mim60ht1li414x8poq07wunbv].[Tooltip (Min Month,Max Month,Wind Kph,Temp C)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+            <format attr='tick-color' value='#00000000' />
+            <format attr='title' class='0' field='[federated.0d4mim60ht1li414x8poq07wunbv].[sum:count:qk]' scope='cols' value='' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='band-color' scope='rows' value='#00000000' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='cols' value='#00000000' />
+            <format attr='band-color' scope='rows' value='#00000000' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#f5f5f5' />
+            <format attr='band-size' scope='cols' value='1' />
+            <format attr='band-size' scope='rows' value='1' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#000000' />
+            <format attr='font-size' value='10' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refband'>
+            <format attr='line-visibility' id='refline4' value='on' />
+            <format attr='line-pattern-only' id='refline4' value='dotted' />
+            <format attr='fill-color' id='refline4' value='#f0f1e8' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0d4mim60ht1li414x8poq07wunbv].[hr:time:ok]' />
+              <text column='[federated.0d4mim60ht1li414x8poq07wunbv].[sum:count:qk]' />
+              <lod column='[federated.0d4mim60ht1li414x8poq07wunbv].[none:Calculation_1800876967065255937:qk]' />
+              <lod column='[federated.0d4mim60ht1li414x8poq07wunbv].[none:Min Month (copy)_1800876967065784322:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text />
+            </customized-tooltip>
+            <customized-label>
+              <formatted-text>
+                <run bold='true'>&lt;</run>
+                <run bold='true'>[federated.0d4mim60ht1li414x8poq07wunbv].[sum:count:qk]</run>
+                <run bold='true'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0d4mim60ht1li414x8poq07wunbv].[hr:time:ok]</rows>
+        <cols>[federated.0d4mim60ht1li414x8poq07wunbv].[sum:count:qk]</cols>
+      </table>
+      <simple-id uuid='{3B63DE5B-EA74-4101-B65D-71C419437E17}' />
+    </worksheet>
     <worksheet name='MovingAvg'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#8cd17d' fontname='Tableau Bold'>&lt;</run>
+            <run fontcolor='#8cd17d' fontname='Tableau Bold'>[Parameters].[Parameter 2]</run>
+            <run fontcolor='#8cd17d' fontname='Tableau Bold'>&gt; &lt;</run>
+            <run fontcolor='#8cd17d' fontname='Tableau Bold'>[Parameters].[Parameter 1]</run>
+            <run fontcolor='#8cd17d' fontname='Tableau Bold'>&gt; moving average</run>
+          </formatted-text>
+        </title>
+      </layout-options>
       <table>
         <view>
           <datasources>
@@ -482,13 +921,61 @@
               <table-calc ordering-type='Rows' />
             </column-instance>
           </datasource-dependencies>
+          <filter class='quantitative' column='[federated.0d4mim60ht1li414x8poq07wunbv].[none:Calculation_1800876967064084480:qk]' included-values='in-range'>
+            <min>#2015-01-04#</min>
+            <max>#2017-01-03#</max>
+          </filter>
+          <slices>
+            <column>[federated.0d4mim60ht1li414x8poq07wunbv].[none:Calculation_1800876967064084480:qk]</column>
+          </slices>
           <aggregation value='true' />
         </view>
         <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0d4mim60ht1li414x8poq07wunbv].[none:Calculation_1800876967064084480:qk]' scope='cols' value='' />
+            <format attr='title' class='0' field='[federated.0d4mim60ht1li414x8poq07wunbv].[usr:Calculation1:qk]' scope='rows' value='' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+            <format attr='tick-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='band-color' scope='rows' value='#00000000' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='cols' value='#00000000' />
+            <format attr='band-color' scope='rows' value='#00000000' />
+            <format attr='border-width' data-class='total' scope='rows' value='1' />
+            <format attr='border-style' data-class='total' scope='rows' value='solid' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#f5f5f5' />
+            <format attr='band-size' scope='cols' value='1' />
+            <format attr='band-size' scope='rows' value='1' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#000000' />
+            <format attr='font-size' value='10' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
           <style-rule element='refband'>
             <format attr='line-visibility' id='refline4' value='on' />
             <format attr='line-pattern-only' id='refline4' value='dotted' />
-            <format attr='fill-color' id='refline4' value='#d4d4d4' />
+            <format attr='fill-color' id='refline4' value='#f0f1e8' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
           </style-rule>
         </style>
         <panes>
@@ -504,6 +991,24 @@
             </encodings>
             <reference-line axis-column='[federated.0d4mim60ht1li414x8poq07wunbv].[none:Calculation_1800876967064084480:qk]' enable-instant-analytics='true' formula='min' id='refline4' label-type='value' paired-id='refline5' scope='per-table' symmetric='false' value-column='[federated.0d4mim60ht1li414x8poq07wunbv].[none:Calculation_1800876967065255937:qk]' z-order='1' />
             <reference-line axis-column='[federated.0d4mim60ht1li414x8poq07wunbv].[none:Calculation_1800876967064084480:qk]' enable-instant-analytics='true' formula='max' id='refline5' label-type='none' paired-id='refline4' scope='per-table' symmetric='false' tooltip-type='none' value-column='[federated.0d4mim60ht1li414x8poq07wunbv].[none:Min Month (copy)_1800876967065784322:qk]' z-order='2' />
+            <customized-tooltip>
+              <formatted-text>
+                <run bold='true' fontcolor='#72b966'><![CDATA[Date:	<[federated.0d4mim60ht1li414x8poq07wunbv].[none:Calculation_1800876967064084480:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontcolor='#72b966'><![CDATA[Moving Average Rides:	<[federated.0d4mim60ht1li414x8poq07wunbv].[usr:Calculation1:qk]>]]></run>
+                <run>Æ&#10;&#10;</run>
+                <run bold='true'><![CDATA[<Sheet name="Weather" maxwidth="300" maxheight="200" filter="<All Fields>">]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true'><![CDATA[<Sheet name="Hour" maxwidth="300" maxheight="400" filter="<All Fields>">]]></run>
+                <run>Æ&#10;&#10;&#10;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
           </pane>
         </panes>
         <rows>[federated.0d4mim60ht1li414x8poq07wunbv].[usr:Calculation1:qk]</rows>
@@ -511,35 +1016,13 @@
       </table>
       <simple-id uuid='{F8B5EC3A-4E4B-4A9E-9DD5-ECEC73360CBA}' />
     </worksheet>
-    <worksheet name='Sheet 4'>
-      <table>
-        <view>
-          <datasources />
-          <aggregation value='true' />
-        </view>
-        <style />
-        <panes>
-          <pane selection-relaxation-option='selection-relaxation-allow'>
-            <view>
-              <breakdown value='auto' />
-            </view>
-            <mark class='Automatic' />
-          </pane>
-        </panes>
-        <rows />
-        <cols />
-      </table>
-      <simple-id uuid='{015D9E69-1B49-4075-BF57-5BAA4E4AB9DA}' />
-    </worksheet>
     <worksheet name='TotalRides'>
       <layout-options>
         <title>
           <formatted-text>
-            <run>London Bike Rides&#10;between &lt;</run>
-            <run>[federated.0d4mim60ht1li414x8poq07wunbv].[none:Calculation_1800876967065255937:qk]</run>
-            <run>&gt; - &lt;</run>
-            <run>[federated.0d4mim60ht1li414x8poq07wunbv].[none:Min Month (copy)_1800876967065784322:qk]</run>
-            <run>&gt;</run>
+            <run bold='true' fontcolor='#72b966'>London Bike Rides</run>
+            <run>Æ&#10;</run>
+            <run bold='true' fontcolor='#72b966' fontsize='11'><![CDATA[between <[federated.0d4mim60ht1li414x8poq07wunbv].[none:Calculation_1800876967065255937:qk]> - <[federated.0d4mim60ht1li414x8poq07wunbv].[none:Min Month (copy)_1800876967065784322:qk]>]]></run>
           </formatted-text>
         </title>
       </layout-options>
@@ -585,7 +1068,49 @@
           </slices>
           <aggregation value='true' />
         </view>
-        <style />
+        <style>
+          <style-rule element='axis'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+            <format attr='tick-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='band-color' scope='rows' value='#00000000' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='cols' value='#00000000' />
+            <format attr='band-color' scope='rows' value='#00000000' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#f5f5f5' />
+            <format attr='band-size' scope='cols' value='1' />
+            <format attr='band-size' scope='rows' value='1' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#000000' />
+            <format attr='font-size' value='10' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refband'>
+            <format attr='line-visibility' id='refline4' value='on' />
+            <format attr='line-pattern-only' id='refline4' value='dotted' />
+            <format attr='fill-color' id='refline4' value='#f0f1e8' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+        </style>
         <panes>
           <pane selection-relaxation-option='selection-relaxation-allow'>
             <view>
@@ -597,10 +1122,25 @@
               <lod column='[federated.0d4mim60ht1li414x8poq07wunbv].[none:Min Month (copy)_1800876967065784322:qk]' />
               <lod column='[federated.0d4mim60ht1li414x8poq07wunbv].[none:Calculation_1800876967065255937:qk]' />
             </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontcolor='#59a14f' fontsize='36'>&lt;</run>
+                <run bold='true' fontcolor='#59a14f' fontsize='36'>[federated.0d4mim60ht1li414x8poq07wunbv].[sum:Calculation_1800876967071744004:qk]</run>
+                <run bold='true' fontcolor='#59a14f' fontsize='36'>&gt;</run>
+              </formatted-text>
+            </customized-label>
             <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='vertical-align' value='center' />
+              </style-rule>
               <style-rule element='mark'>
                 <format attr='mark-labels-show' value='true' />
                 <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
               </style-rule>
             </style>
           </pane>
@@ -610,12 +1150,280 @@
       </table>
       <simple-id uuid='{77179EEB-390E-46FD-A661-1E6B20896D2D}' />
     </worksheet>
+    <worksheet name='Weather'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Data (london_bikes_final)' name='federated.0d4mim60ht1li414x8poq07wunbv' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Moving Average Period' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;day&quot;'>
+              <calculation class='tableau' formula='&quot;day&quot;' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.0d4mim60ht1li414x8poq07wunbv'>
+            <column caption='Moving Average Period' datatype='date' datatype-customized='true' name='[Calculation_1800876967064084480]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='DATE(DATETRUNC([Parameters].[Parameter 1], [time]))' />
+            </column>
+            <column caption='Min Month' datatype='date' name='[Calculation_1800876967065255937]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='{ MIN(IF [Moving Average Period Set] THEN [Calculation_1800876967064084480] END)}' />
+            </column>
+            <column caption='In Range' datatype='boolean' name='[Calculation_1800876967069999107]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='[Calculation_1800876967064084480]&gt;= [Calculation_1800876967065255937]&#10;AND&#10;[Calculation_1800876967064084480]&lt;= [Min Month (copy)_1800876967065784322]' />
+            </column>
+            <column caption='Max Month' datatype='date' name='[Min Month (copy)_1800876967065784322]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='{ MAX(IF [Moving Average Period Set] THEN [Calculation_1800876967064084480] END)}' />
+            </column>
+            <column caption='Wind Kph' datatype='integer' name='[Wind Speed Kph (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='-2' formula='[wind_speed_kph]' peg='0' size='3.43' />
+            </column>
+            <column caption='Count' datatype='integer' name='[count]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_1800876967065255937]' derivation='None' name='[none:Calculation_1800876967065255937:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1800876967069999107]' derivation='None' name='[none:Calculation_1800876967069999107:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Min Month (copy)_1800876967065784322]' derivation='None' name='[none:Min Month (copy)_1800876967065784322:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[weather]' derivation='None' name='[none:weather:nk]' pivot='key' type='nominal' />
+            <column-instance column='[count]' derivation='Sum' name='[sum:count:qk]' pivot='key' type='quantitative' />
+            <column caption='Temp C' datatype='integer' name='[temp real C (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='-2' formula='[temp_real_C]' peg='0' size='2.44' />
+            </column>
+            <column caption='temp real C' datatype='real' name='[temp_real_C]' role='measure' type='quantitative' />
+            <column caption='Time' datatype='datetime' name='[time]' role='dimension' type='ordinal' />
+            <column caption='Weather' datatype='string' name='[weather]' role='dimension' type='nominal' />
+            <column caption='Wind Speed Kph' datatype='real' name='[wind_speed_kph]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0d4mim60ht1li414x8poq07wunbv].[Tooltip (Min Month,Max Month,Wind Kph,Temp C)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action - Weather]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Calculation_1800876967065255937]' />
+              <groupfilter function='level-members' level='[Min Month (copy)_1800876967065784322]' />
+              <groupfilter function='level-members' level='[Wind Speed Kph (bin)]' />
+              <groupfilter function='level-members' level='[temp real C (bin)]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0d4mim60ht1li414x8poq07wunbv].[Tooltip (Moving Average Period,Min Month,Max Month)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action - Weather]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Calculation_1800876967064084480]' />
+              <groupfilter function='level-members' level='[Calculation_1800876967065255937]' />
+              <groupfilter function='level-members' level='[Min Month (copy)_1800876967065784322]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0d4mim60ht1li414x8poq07wunbv].[none:Calculation_1800876967069999107:nk]'>
+            <groupfilter function='member' level='[none:Calculation_1800876967069999107:nk]' member='true' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0d4mim60ht1li414x8poq07wunbv].[none:weather:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0d4mim60ht1li414x8poq07wunbv].[sum:count:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0d4mim60ht1li414x8poq07wunbv].[none:Calculation_1800876967069999107:nk]</column>
+            <column>[federated.0d4mim60ht1li414x8poq07wunbv].[Tooltip (Moving Average Period,Min Month,Max Month)]</column>
+            <column>[federated.0d4mim60ht1li414x8poq07wunbv].[Tooltip (Min Month,Max Month,Wind Kph,Temp C)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+            <format attr='tick-color' value='#00000000' />
+            <format attr='title' class='0' field='[federated.0d4mim60ht1li414x8poq07wunbv].[sum:count:qk]' scope='cols' value='' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='band-color' scope='rows' value='#00000000' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='cols' value='#00000000' />
+            <format attr='band-color' scope='rows' value='#00000000' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#f5f5f5' />
+            <format attr='band-size' scope='cols' value='1' />
+            <format attr='band-size' scope='rows' value='1' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#000000' />
+            <format attr='font-size' value='10' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refband'>
+            <format attr='line-visibility' id='refline4' value='on' />
+            <format attr='line-pattern-only' id='refline4' value='dotted' />
+            <format attr='fill-color' id='refline4' value='#f0f1e8' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0d4mim60ht1li414x8poq07wunbv].[none:weather:nk]' />
+              <text column='[federated.0d4mim60ht1li414x8poq07wunbv].[sum:count:qk]' />
+              <lod column='[federated.0d4mim60ht1li414x8poq07wunbv].[none:Calculation_1800876967065255937:qk]' />
+              <lod column='[federated.0d4mim60ht1li414x8poq07wunbv].[none:Min Month (copy)_1800876967065784322:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text />
+            </customized-tooltip>
+            <customized-label>
+              <formatted-text>
+                <run bold='true'>&lt;</run>
+                <run bold='true'>[federated.0d4mim60ht1li414x8poq07wunbv].[sum:count:qk]</run>
+                <run bold='true'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0d4mim60ht1li414x8poq07wunbv].[none:weather:nk]</rows>
+        <cols>[federated.0d4mim60ht1li414x8poq07wunbv].[sum:count:qk]</cols>
+      </table>
+      <simple-id uuid='{015D9E69-1B49-4075-BF57-5BAA4E4AB9DA}' />
+    </worksheet>
   </worksheets>
-  <windows source-height='30'>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style>
+        <style-rule element='parameter-ctrl'>
+          <format attr='color' value='#72b966' />
+        </style-rule>
+        <style-rule element='parameter-ctrl-title'>
+          <format attr='color' value='#72b966' />
+        </style-rule>
+      </style>
+      <size maxheight='768' maxwidth='1366' minheight='768' minwidth='1366' preset-index='0' sizing-mode='fixed' />
+      <datasources>
+        <datasource name='Parameters' />
+        <datasource caption='Data (london_bikes_final)' name='federated.0d4mim60ht1li414x8poq07wunbv' />
+      </datasources>
+      <datasource-dependencies datasource='Parameters'>
+        <column caption='Moving Average Period' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;day&quot;'>
+          <calculation class='tableau' formula='&quot;day&quot;' />
+          <members>
+            <member value='&quot;day&quot;' />
+            <member value='&quot;week&quot;' />
+            <member value='&quot;month&quot;' />
+          </members>
+        </column>
+        <column caption='Moving Average Duration' datatype='integer' name='[Parameter 2]' param-domain-type='any' role='measure' type='quantitative' value='10'>
+          <calculation class='tableau' formula='10' />
+        </column>
+      </datasource-dependencies>
+      <datasource-dependencies datasource='federated.0d4mim60ht1li414x8poq07wunbv'>
+        <column caption='Moving Average Period' datatype='date' datatype-customized='true' name='[Calculation_1800876967064084480]' role='dimension' type='ordinal'>
+          <calculation class='tableau' formula='DATE(DATETRUNC([Parameters].[Parameter 1], [time]))' />
+        </column>
+        <column-instance column='[Calculation_1800876967064084480]' derivation='None' name='[none:Calculation_1800876967064084480:qk]' pivot='key' type='quantitative' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97916' id='18' param='horz' type-v2='layout-flow' w='98828' x='586' y='1042'>
+            <zone h='97916' id='15' param='horz' type-v2='layout-flow' w='98828' x='586' y='1042'>
+              <zone h='97916' id='13' type-v2='layout-basic' w='98828' x='586' y='1042'>
+                <zone h='43880' id='8' param='horz' type-v2='layout-flow' w='98828' x='586' y='1042'>
+                  <zone h='43880' id='6' type-v2='layout-basic' w='98828' x='586' y='1042'>
+                    <zone h='43880' id='3' name='TotalRides' w='24374' x='586' y='1042'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone h='43880' id='5' name='MovingAvg' w='74454' x='24960' y='1042'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                  </zone>
+                </zone>
+                <zone h='54036' id='12' name='Heatmap' w='98828' x='586' y='44922'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone custom-title='true' h='5729' id='10' mode='type_in' param='[Parameters].[Parameter 2]' type-v2='paramctrl' w='11713' x='69693' y='911'>
+          <formatted-text>
+            <run bold='true'>Moving Average Duration</run>
+          </formatted-text>
+        </zone>
+        <zone custom-title='true' h='5990' id='11' mode='compact' param='[Parameters].[Parameter 1]' type-v2='paramctrl' w='11713' x='57174' y='1172'>
+          <formatted-text>
+            <run bold='true'>Moving Average Period</run>
+          </formatted-text>
+        </zone>
+        <zone forceUpdate='true' h='5339' id='16' type-v2='text' w='11567' x='45095' y='1172'>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#59a14f'>Drag and hold to select</run>
+            <run fontalignment='1'>Æ&#10;</run>
+            <run bold='true' fontalignment='1' fontcolor='#59a14f'>time and date on timeline</run>
+          </formatted-text>
+        </zone>
+        <zone h='7813' id='19' name='MovingAvg' param='[federated.0d4mim60ht1li414x8poq07wunbv].[none:Calculation_1800876967064084480:qk]' type-v2='filter' values='database' w='11274' x='75842' y='32292' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='1' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{8412AD38-AFAA-49D8-A128-68E7EB10CD21}' />
+    </dashboard>
+  </dashboards>
+  <windows pres-mode='true' source-height='30'>
     <window class='worksheet' name='MovingAvg'>
       <cards>
         <edge name='left'>
-          <strip size='100'>
+          <strip size='160'>
             <card type='pages' />
             <card type='filters' />
             <card type='marks' />
@@ -685,18 +1493,13 @@
             <card type='title' />
           </strip>
         </edge>
-        <edge name='right'>
-          <strip size='160'>
-            <card pane-specification-id='0' param='[federated.0d4mim60ht1li414x8poq07wunbv].[sum:count:qk]' type='color' />
-          </strip>
-        </edge>
       </cards>
       <viewpoint>
         <zoom type='entire-view' />
       </viewpoint>
       <simple-id uuid='{F818530F-C872-4330-BA23-60C45D0620F2}' />
     </window>
-    <window class='worksheet' maximized='true' name='Sheet 4'>
+    <window class='worksheet' name='Weather'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -706,18 +1509,70 @@
           </strip>
         </edge>
         <edge name='top'>
-          <strip size='31'>
+          <strip size='2147483647'>
             <card type='columns' />
           </strip>
-          <strip size='31'>
+          <strip size='2147483647'>
             <card type='rows' />
           </strip>
           <strip size='31'>
             <card type='title' />
           </strip>
         </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0d4mim60ht1li414x8poq07wunbv].[none:weather:nk]' type='color' />
+          </strip>
+        </edge>
       </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
       <simple-id uuid='{6111DF67-1B2A-4D73-AFF9-6A0D796EB941}' />
+    </window>
+    <window class='worksheet' name='Hour'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0d4mim60ht1li414x8poq07wunbv].[hr:time:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{B73D5A25-D019-400A-B105-02D97F13A208}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Heatmap'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='MovingAvg'>
+          <zoom type='fit-width' />
+          <floating-toolbar-visibility value='1' />
+        </viewpoint>
+        <viewpoint name='TotalRides'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='5' />
+      <simple-id uuid='{BA8014EA-CF68-456D-92D3-39E9B1B0FC63}' />
     </window>
   </windows>
 </workbook>
